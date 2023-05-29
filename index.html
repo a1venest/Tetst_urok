@@ -30,9 +30,10 @@
             </nav>
         </div>
     </header>
+
     <main class="main">
         <div class="main__container">
-            <form action="" class="__container-panel">
+            <form action="form.php" method="post" class="__container-panel">
                 <div class="-panel-name">
                     <label class="-name-form" for="fullName">ФИО</label>
                     <input class="-name-input" type="text" name="fullName" id="fullName">
@@ -43,24 +44,24 @@
                 </div>
                 <div class="-panel-city">
                     <label class="-city-form" for="city">Город</label>
-                    <select class="-citi-select" id="city" name="city[]">
-                <option class="-select-value -value-option" value="msk">Москва</option>
-                <option class="-select-value" value="ekb">Екатеринбург</option>
-                <option class="-select-value" value="tomsk">Томск</option>
-                <option class="-select-value" value="spb">Санкт-Петербург</option>
+                    <select class="-citi-select" id="city" name="city">
+                        <option class="-select-value -value-option" value="Москва">Москва</option>
+                        <option class="-select-value" value="Екатеринбург">Екатеринбург</option>
+                        <option class="-select-value" value="Томск">Томск</option>
+                        <option class="-select-value" value="Санкт-Петербург">Санкт-Петербург</option>
                     </select>
                 </div>
                 <div class="-form-dop">
                     <h2 class="-dop-title">Дополнительные услуги</h2>
                     <div class="-dop-input">
                         <div class="-input-container">
-                            <input class="-container-text" type="checkbox" required name="check">Обед
+                            <input class="-container-text" type="checkbox" value="Обед" name="check[]">Обед
                         </div>
                         <div class="-input-container">
-                            <input class="-container-text" type="checkbox" required name="check">Спальное место
+                            <input class="-container-text" type="checkbox" value="Спальное мксто" name="check[]">Спальное место
                         </div>
                         <div class="-input-container">
-                            <input class="-container-text" type="checkbox" required name="check">Такси
+                            <input class="-container-text" type="checkbox" value="Такси" name="check[]">Такси
                         </div>
                     </div>
                 </div>
@@ -77,7 +78,7 @@
             <img src="img/logosvgcom.png" alt="logo" class="__logo-image">
         </div>
         <div class="footer__link">
-            <a href="#" class="__link-text">Link</a>
+            <a href="second.php" class="__link-text">Count cookie</a>
             <a href="#" class="__link-text">Link</a>
             <a href="#" class="__link-text">Link</a>
         </div>
